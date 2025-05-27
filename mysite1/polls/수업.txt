@@ -1,0 +1,2 @@
+(base) gimjin-yeong@gimjin-yeong-ui-noteubug mysite1 % python manage.py startapp polls 
+--> mysite1 디렉토리에 polls 라는 장고app을 만듬

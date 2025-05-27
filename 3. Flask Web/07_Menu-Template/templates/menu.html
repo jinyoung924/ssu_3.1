@@ -1,0 +1,26 @@
+
+<html>
+
+<body>
+<!-- {{ 변수이름 }}-->
+<h2>{{restaurant.name}}</h2>
+
+
+{% for i in items %} {%  %}<!-- iterater를 이용한 반복문 : item의 수 만큼 밑의 <div></div> 태그가 출력됨-->
+
+<div>
+
+<p>{{i.name}}</p>
+
+<p>{{i.description}}</p>
+
+<p> {{i.price}} </p>
+
+</div>
+
+
+{% endfor %} <!--위의 {%for   %}의 범위를 닫아주는 문법-->
+</body>
+
+</html>
+
