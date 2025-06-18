@@ -1,0 +1,16 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="pane">
+    <h1>New Book for {{ bookstore_id }}</h1>
+    <form method="POST" action="{{ url_for('newBookItem', bookstore_id=bookstore_id) }}">
+      <p>Name: <input type="text" name="name"></p>
+      <p>Price: <input type="text" name="price"></p>
+      <p><input type="submit" value="Create"></p>
+    </form>
+    <a href="{{ url_for('bookList', bookstore_id=bookstore_id) }}">Cancel</a>
+  </div>
+</body>
+</html>
